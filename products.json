@@ -1,7 +1,65 @@
-[
-    {
-        "slug": "kevin",
-        "title": "Kevin",
-        "cost": 899.349
-    }
-]
+{
+    "products": [
+        {
+            "slug": "premium",
+            "title": "Premium",
+            "description": "Premium plan granting various perks",
+            "cost": 1800,
+            "ownershipSeconds": 2592000,
+            "type": 4
+        },
+        {
+            "slug": "premium-quater",
+            "title": "3 months of Premium",
+            "cost": 5400,
+            "ownershipSeconds": 7776000,
+            "type": 4
+        },
+        {
+            "slug": "premium-half-year",
+            "title": "Half a year of Premium",
+            "cost": 10800,
+            "ownershipSeconds": 15552000,
+            "type": 4
+        },
+        {
+            "slug": "premium-hour",
+            "title": "One hour of Premium",
+            "cost": 100,
+            "ownershipSeconds": 3600,
+            "type": 4
+        },
+        {
+            "slug": "sniper-smal",
+            "title": "One hour of Sniper time",
+            "cost": 200,
+            "ownershipSeconds": 3600
+        },
+        {
+            "slug": "budget-premium",
+            "title": "3 months of Basic Plan",
+            "cost": 1800,
+            "ownershipSeconds": 7776000,
+            "type": 4
+        },
+        {
+            "slug": "referal",
+            "title": "Referral bonus",
+            "cost": 100,
+            "type": 4
+        }
+    ],
+    "topups":
+    [
+        {
+            "slug": "coin-bag",
+            "title": "A bag of coins",
+            "cost": 100,
+            "price": 3,
+            "currencyCode": "eur",
+            "ProviderSlug": "custom",
+            "type": 38
+        }
+    ]
+
+}
