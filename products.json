@@ -59,6 +59,14 @@
             "currencyCode": "eur",
             "ProviderSlug": "custom",
             "type": 38
+        },
+        {
+            "slug": "compensation",
+            "title": "Compensation for downtime",
+            "cost": 4320,
+            "price": 3,
+            "ProviderSlug": "custom",
+            "type": 38
         }
     ]
 
