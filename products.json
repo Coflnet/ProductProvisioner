@@ -4,7 +4,7 @@
             "slug": "premium",
             "title": "Premium",
             "description": "Premium plan granting various perks",
-            "cost": 1800,
+            "cost": 1801,
             "ownershipSeconds": 2592000,
             "type": 4
         },
@@ -36,10 +36,10 @@
             "ownershipSeconds": 3600
         },
         {
-            "slug": "budget-premium",
-            "title": "3 months of Basic Plan",
+            "slug": "premium-plus",
+            "title": "Prem+",
             "cost": 1800,
-            "ownershipSeconds": 7776000,
+            "ownershipSeconds": 604800,
             "type": 4
         },
         {
@@ -49,8 +49,7 @@
             "type": 4
         }
     ],
-    "topups":
-    [
+    "topups": [
         {
             "slug": "coin-bag",
             "title": "A bag of coins",
@@ -68,6 +67,19 @@
             "ProviderSlug": "custom",
             "type": 38
         }
+    ],
+    "groups":
+    {
+        "premium":["premium-plus"]
+    },
+    "rules": [
+        {
+            "slug": "premium-sniper-discount",
+            "priority": 5,
+            "requiresGroup": "premium",
+            "targetsGroup": "sniper-smal",
+            "flags": "DISCOUNT, PERCENT",
+            "amount": 10
+        }
     ]
-
 }
