@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 Console.WriteLine("Applying");
 
-var applyApi = new ApplyApi("http://" + Environment.GetEnvironmentVariable("payment_host"));
+var applyApi = new ApplyApi("http://" + Environment.GetEnvironmentVariable("PAYMENT_HOST"));
 Console.WriteLine("Using instance " + applyApi.Configuration.BasePath);
 var data = JsonConvert.DeserializeObject<SystemState>(
         File.ReadAllText("products.json"));
@@ -15,4 +15,5 @@ if (data == null)
     throw new Exception("products.json is invalid");
 
 await applyApi.ApplyPostAsync(data);
+Console.WriteLine("Done");
 
