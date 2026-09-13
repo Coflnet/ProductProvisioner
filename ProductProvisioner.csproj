@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Coflnet.Payments.Client" Version="0.12.1" />
++    <PackageReference Include="Coflnet.Payments.Client" Version="0.28.0" />
   </ItemGroup>
 
 </Project>
